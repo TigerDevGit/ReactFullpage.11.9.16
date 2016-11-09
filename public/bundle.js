@@ -75,7 +75,7 @@
 	_reactDom2.default.render(_react2.default.createElement(
 	  'div',
 	  null,
-	  _react2.default.createElement(_App2.default, null)
+	  _react2.default.createElement(_App2.default, { count: '50', oneColum: '5' })
 	), document.getElementById('root'));
 
 /***/ },
@@ -23543,11 +23543,13 @@
 	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
+	      var cnt = Number(this.props.count),
+	          oCol = Number(this.props.oneColum);
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_PageSection2.default, null),
-	        _react2.default.createElement(_Panel2.default, null),
+	        _react2.default.createElement(_PageSection2.default, { rowCount: cnt / oCol }),
+	        _react2.default.createElement(_Panel2.default, { imgCount: cnt }),
 	        _react2.default.createElement(_StatusContents2.default, null)
 	      );
 	    }
@@ -23643,7 +23645,7 @@
 	  _createClass(PageSection, [{
 	    key: "render",
 	    value: function render() {
-	      var arr = Array(10).fill(0);
+	      var arr = Array(Number(this.props.rowCount)).fill(0);
 	      return _react2.default.createElement(
 	        "div",
 	        { id: "fullpage" },

@@ -16,7 +16,7 @@ class SectionRow extends React.Component {
 
 class PageSection extends React.Component {
   render() {
-    let arr = Array(10).fill(0);
+    let arr = Array(Number(this.props.rowCount)).fill(0);
     return(
       <div id="fullpage">
         {arr.map((e,i)=>(<SectionRow key={i}/>))}

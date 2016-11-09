@@ -11,7 +11,7 @@ let comarr = arr.map((entity,i)=>(<App key={i}/>));
 console.log(JSON.stringify(comarr));
 ReactDOM.render(
   <div>
-    <App />
+    <App count='50' oneColum='5'/>
   </div>
   ,
   document.getElementById('root')
