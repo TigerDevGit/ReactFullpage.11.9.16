@@ -1,5 +1,5 @@
 import './css/style.css';
-import jq from 'jquery';
+import jQuery from 'jquery';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
