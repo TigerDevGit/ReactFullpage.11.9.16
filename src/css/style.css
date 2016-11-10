@@ -108,3 +108,11 @@ Fixed button outside the fullpage.js wrapper
 hr, h1 {
   margin: 0;
 }
+
+.glyphicon-triangle-top {
+  color: green;
+}
+
+.glyphicon-triangle-bottom {
+  color: red;
+}

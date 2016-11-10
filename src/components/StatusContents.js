@@ -6,12 +6,15 @@ class StatusElement extends React.Component {
       height: '100px',
       color: 'white'
     };
+    let bottom = (<span className="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>);
+    let top = (<span className="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>);
     return (
       <div className='col-xs-4' style={itemStyle}>
         <h3>{this.props.title}</h3>
         <hr/>
         <h1>{this.props.value}</h1>
         <hr/>
+        {this.props.isTop ? top : bottom}
         <span>{this.props.comment}</span>
       </div>
     );
@@ -29,7 +32,7 @@ class StatusContents extends React.Component {
           <div className="container">
             <div id="contentsTable" className="row">
               <div className='row col-xs-7'>
-                <StatusElement title="Temp" value="89.8'" comment="since yesterday" />
+                <StatusElement title="Temp" value="89.8'" comment="since yesterday" isTop="true"/>
                 <StatusElement title="Humidity" value="80%" comment="since yesterday" />
                 <StatusElement title="VPD" value="9.4" comment="no change" />
                 <StatusElement title="Lux" value="7.8" comment="since yesterday" />

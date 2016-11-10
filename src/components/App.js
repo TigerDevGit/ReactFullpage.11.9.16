@@ -5,11 +5,10 @@ import StatusContents from './StatusContents';
 
 class App extends React.Component {
   render() {
-    let cnt = Number(this.props.count), oCol = Number(this.props.oneColum);
     return(
       <div>
-        <PageSection rowCount={cnt/oCol} />
-        <Panel imgCount={cnt}/>
+        <PageSection imgArr={this.props.imgs}/>
+        <Panel imgArr={this.props.imgs}/>
         <StatusContents />
       </div>
     );

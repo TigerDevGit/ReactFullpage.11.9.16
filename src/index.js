@@ -1,13 +1,17 @@
 import './css/style.css';
-import jQuery from 'jquery';
+import 'jquery';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 
+let imgs = new Array(50);
+imgs.fill('img.jpg');
+console.log(imgs);
+
 ReactDOM.render(
   <div>
-    <App count='50' oneColum='5'/>
+    <App imgs={imgs}/>
   </div>
   ,
   document.getElementById('root')

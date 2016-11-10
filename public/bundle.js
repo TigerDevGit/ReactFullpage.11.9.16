@@ -48,9 +48,7 @@
 
 	__webpack_require__(1);
 
-	var _jquery = __webpack_require__(5);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
+	__webpack_require__(5);
 
 	var _react = __webpack_require__(7);
 
@@ -66,16 +64,14 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var arr = new Array(10);
-	arr.fill(1);
-	var comarr = arr.map(function (entity, i) {
-	  return _react2.default.createElement(_App2.default, { key: i });
-	});
-	console.log(JSON.stringify(comarr));
+	var imgs = new Array(50);
+	imgs.fill('img.jpg');
+	console.log(imgs);
+
 	_reactDom2.default.render(_react2.default.createElement(
 	  'div',
 	  null,
-	  _react2.default.createElement(_App2.default, { count: '50', oneColum: '5' })
+	  _react2.default.createElement(_App2.default, { imgs: imgs })
 	), document.getElementById('root'));
 
 /***/ },
@@ -113,7 +109,7 @@
 
 
 	// module
-	exports.push([module.id, ".section {\r\n  text-align:center;\r\n  font-size: 3em;\r\n}\r\n\r\n.fp-controlArrow {\r\n  /*display: none;*/\r\n}\r\n\r\n/**\r\nFixed button outside the fullpage.js wrapper\r\n*/\r\n#moveUp{\r\n  top: 20px;\r\n  left: 20px;\r\n  position:fixed;\r\n  z-index:999;\r\n  font-size: 3em;\r\n}\r\n\r\n#fullpage img {\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n#panel {\r\n  width: 212px;\r\n  height: 268px;\r\n  background: rgba(0,0,0,0.8);\r\n  position: fixed;;\r\n  bottom: 45px;\r\n  right: 55px;\r\n  border-radius: 6px;\r\n  box-shadow: 0px -3px 15px 3px rgba(255, 255, 255, 0.5);\r\n  z-index: 1;\r\n  padding: 20px 0;\r\n}\r\n\r\n#panel .row {\r\n  height: 10%;\r\n  width: 100%;\r\n  margin: 0px;\r\n  padding: 0px 20px;\r\n}\r\n\r\n#panel img {\r\n  width: 100%;\r\n  height: 100%;\r\n  vertical-align: baseline;\r\n}\r\n\r\n.paneltoggle {\r\n  width: 85%;\r\n  height: 90%;\r\n}\r\n\r\n#panel .col-xs-2 {\r\n  width: 20%;\r\n  padding: 2px;\r\n  height: 100%;\r\n}\r\n\r\n#panel .active {\r\n  background-color: #8fc2ff;\r\n  box-shadow: 0 0 8px 2px #8fc2ff;\r\n}\r\n\r\n\r\n#status {\r\n  width: 100%;\r\n  position: fixed;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: 1;\r\n}\r\n\r\n#status #buttonImg {\r\n  width: 100px;\r\n  height: 100px;\r\n}\r\n#status #statusContents {\r\n  -webkit-box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  -moz-box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  /*height: 458px;*/\r\n  background: rgba(0, 0, 0, 0.75);;\r\n}\r\n#status #lineImg {\r\n  width: 100%;\r\n  height: 175px;\r\n}\r\n#status #contentsTable {\r\n  width: 100%;\r\n  height: 300px;\r\n}\r\n#status #contentsTable #contentsImg {\r\n  width: 65%;\r\n  height: 240px;\r\n  margin: 30px;\r\n}\r\n\r\n#status .col-xs-4 {\r\n  margin-top: 20px;\r\n}\r\n\r\nhr, h1 {\r\n  margin: 0;\r\n}\r\n", ""]);
+	exports.push([module.id, ".section {\r\n  text-align:center;\r\n  font-size: 3em;\r\n}\r\n\r\n.fp-controlArrow {\r\n  /*display: none;*/\r\n}\r\n\r\n/**\r\nFixed button outside the fullpage.js wrapper\r\n*/\r\n#moveUp{\r\n  top: 20px;\r\n  left: 20px;\r\n  position:fixed;\r\n  z-index:999;\r\n  font-size: 3em;\r\n}\r\n\r\n#fullpage img {\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n#panel {\r\n  width: 212px;\r\n  height: 268px;\r\n  background: rgba(0,0,0,0.8);\r\n  position: fixed;;\r\n  bottom: 45px;\r\n  right: 55px;\r\n  border-radius: 5%;\r\n  box-shadow: 0px -3px 15px 3px rgba(255, 255, 255, 0.5);\r\n  z-index: 1;\r\n  padding: 20px 0;\r\n}\r\n\r\n#panel .row {\r\n  height: 10%;\r\n  width: 100%;\r\n  margin: 0px;\r\n  padding: 0px 20px;\r\n}\r\n\r\n#panel img {\r\n  width: 90%;\r\n  height: 90%;\r\n  display: block;\r\n  margin: auto;\r\n  border-radius: 10%;\r\n}\r\n\r\n.paneltoggle {\r\n  width: 85%;\r\n  height: 90%;\r\n}\r\n\r\n#panel .col-xs-2 {\r\n  width: 20%;\r\n  padding: 2px;\r\n  height: 100%;\r\n}\r\n\r\n#panel .active {\r\n  background-color: #8fc2ff;\r\n  box-shadow: 0 0 8px 2px #8fc2ff;\r\n}\r\n\r\n\r\n#status {\r\n  width: 100%;\r\n  position: fixed;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: 1;\r\n}\r\n\r\n#status #buttonImg {\r\n  width: 100px;\r\n  height: 100px;\r\n}\r\n#status #statusContents {\r\n  -webkit-box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  -moz-box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  /*height: 458px;*/\r\n  background: rgba(0, 0, 0, 0.75);;\r\n}\r\n#status #lineImg {\r\n  width: 100%;\r\n  height: 175px;\r\n}\r\n#status #contentsTable {\r\n  width: 100%;\r\n  height: 300px;\r\n}\r\n#status #contentsTable #contentsImg {\r\n  width: 65%;\r\n  height: 240px;\r\n  margin: 30px;\r\n}\r\n\r\n#status .col-xs-4 {\r\n  margin-top: 20px;\r\n}\r\n\r\nhr, h1 {\r\n  margin: 0;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -23543,13 +23539,11 @@
 	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
-	      var cnt = Number(this.props.count),
-	          oCol = Number(this.props.oneColum);
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_PageSection2.default, { rowCount: cnt / oCol }),
-	        _react2.default.createElement(_Panel2.default, { imgCount: cnt }),
+	        _react2.default.createElement(_PageSection2.default, { imgArr: this.props.imgs }),
+	        _react2.default.createElement(_Panel2.default, { imgArr: this.props.imgs }),
 	        _react2.default.createElement(_StatusContents2.default, null)
 	      );
 	    }
@@ -23586,8 +23580,31 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var SectionRow = function (_React$Component) {
-	  _inherits(SectionRow, _React$Component);
+	var Element = function (_React$Component) {
+	  _inherits(Element, _React$Component);
+
+	  function Element() {
+	    _classCallCheck(this, Element);
+
+	    return _possibleConstructorReturn(this, (Element.__proto__ || Object.getPrototypeOf(Element)).apply(this, arguments));
+	  }
+
+	  _createClass(Element, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "slide" },
+	        _react2.default.createElement("img", { src: this.props.filename, alt: "Smiley face" })
+	      );
+	    }
+	  }]);
+
+	  return Element;
+	}(_react2.default.Component);
+
+	var SectionRow = function (_React$Component2) {
+	  _inherits(SectionRow, _React$Component2);
 
 	  function SectionRow() {
 	    _classCallCheck(this, SectionRow);
@@ -23598,34 +23615,13 @@
 	  _createClass(SectionRow, [{
 	    key: "render",
 	    value: function render() {
+	      var arr = Array(5).fill(0);
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "section" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "slide" },
-	          _react2.default.createElement("img", { src: "img.jpg", alt: "Smiley face" })
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "slide" },
-	          _react2.default.createElement("img", { src: "img.jpg", alt: "Smiley face" })
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "slide" },
-	          _react2.default.createElement("img", { src: "img.jpg", alt: "Smiley face" })
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "slide" },
-	          _react2.default.createElement("img", { src: "img.jpg", alt: "Smiley face" })
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "slide" },
-	          _react2.default.createElement("img", { src: "img.jpg", alt: "Smiley face" })
-	        )
+	        arr.map(function (e, i) {
+	          return _react2.default.createElement(Element, { key: i, filename: "img.jpg" });
+	        })
 	      );
 	    }
 	  }]);
@@ -23633,8 +23629,8 @@
 	  return SectionRow;
 	}(_react2.default.Component);
 
-	var PageSection = function (_React$Component2) {
-	  _inherits(PageSection, _React$Component2);
+	var PageSection = function (_React$Component3) {
+	  _inherits(PageSection, _React$Component3);
 
 	  function PageSection() {
 	    _classCallCheck(this, PageSection);
@@ -23645,7 +23641,7 @@
 	  _createClass(PageSection, [{
 	    key: "render",
 	    value: function render() {
-	      var arr = Array(Number(this.props.rowCount)).fill(0);
+	      var arr = Array(10).fill(0);
 	      return _react2.default.createElement(
 	        "div",
 	        { id: "fullpage" },
@@ -23685,8 +23681,31 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Row = function (_React$Component) {
-	  _inherits(Row, _React$Component);
+	var Element = function (_React$Component) {
+	  _inherits(Element, _React$Component);
+
+	  function Element() {
+	    _classCallCheck(this, Element);
+
+	    return _possibleConstructorReturn(this, (Element.__proto__ || Object.getPrototypeOf(Element)).apply(this, arguments));
+	  }
+
+	  _createClass(Element, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'col-xs-2' },
+	        _react2.default.createElement('img', { src: this.props.imgName, alt: 'Smiley face' })
+	      );
+	    }
+	  }]);
+
+	  return Element;
+	}(_react2.default.Component);
+
+	var Row = function (_React$Component2) {
+	  _inherits(Row, _React$Component2);
 
 	  function Row() {
 	    _classCallCheck(this, Row);
@@ -23697,34 +23716,13 @@
 	  _createClass(Row, [{
 	    key: 'render',
 	    value: function render() {
+	      var arr = Array(5).fill(0);
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'row' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'col-xs-2' },
-	          _react2.default.createElement('img', { src: 'img.jpg', alt: 'Smiley face' })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'col-xs-2' },
-	          _react2.default.createElement('img', { src: 'img.jpg', alt: 'Smiley face' })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'col-xs-2' },
-	          _react2.default.createElement('img', { src: 'img.jpg', alt: 'Smiley face' })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'col-xs-2' },
-	          _react2.default.createElement('img', { src: 'img.jpg', alt: 'Smiley face' })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'col-xs-2' },
-	          _react2.default.createElement('img', { src: 'img.jpg', alt: 'Smiley face' })
-	        )
+	        arr.map(function (e, i) {
+	          return _react2.default.createElement(Element, { key: i, imgName: 'img.jpg' });
+	        })
 	      );
 	    }
 	  }]);
@@ -23732,8 +23730,8 @@
 	  return Row;
 	}(_react2.default.Component);
 
-	var Panel = function (_React$Component2) {
-	  _inherits(Panel, _React$Component2);
+	var Panel = function (_React$Component3) {
+	  _inherits(Panel, _React$Component3);
 
 	  function Panel() {
 	    _classCallCheck(this, Panel);
@@ -23744,7 +23742,8 @@
 	  _createClass(Panel, [{
 	    key: 'render',
 	    value: function render() {
-	      var arr = Array(10).fill(0);
+	      var arr = Array(this.props.imgArr.length / 5).fill(0);
+
 	      return _react2.default.createElement(
 	        'div',
 	        { id: 'panel', className: 'container' },
@@ -23800,6 +23799,8 @@
 	        height: '100px',
 	        color: 'white'
 	      };
+	      var bottom = _react2.default.createElement('span', { className: 'glyphicon glyphicon-triangle-bottom', 'aria-hidden': 'true' });
+	      var top = _react2.default.createElement('span', { className: 'glyphicon glyphicon-triangle-top', 'aria-hidden': 'true' });
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'col-xs-4', style: itemStyle },
@@ -23815,6 +23816,7 @@
 	          this.props.value
 	        ),
 	        _react2.default.createElement('hr', null),
+	        this.state.isTop ? top : bottom,
 	        _react2.default.createElement(
 	          'span',
 	          null,

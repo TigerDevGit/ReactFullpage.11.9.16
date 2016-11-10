@@ -1,14 +1,19 @@
 import React from 'react';
 
-class SectionRow extends React.Component {
+class Element extends React.Component {
   render() {
     return (
+      <div className="slide"><img src={this.props.filename} alt="Smiley face" /></div>
+    );
+  }
+}
+
+class SectionRow extends React.Component {
+  render() {
+    let arr = Array(5).fill(0);
+    return (
       <div className="section">
-        <div className="slide"><img src="img.jpg" alt="Smiley face" /></div>
-        <div className="slide"><img src="img.jpg" alt="Smiley face" /></div>
-        <div className="slide"><img src="img.jpg" alt="Smiley face" /></div>
-        <div className="slide"><img src="img.jpg" alt="Smiley face" /></div>
-        <div className="slide"><img src="img.jpg" alt="Smiley face" /></div>
+        {arr.map((e,i)=>(<Element key={i} filename="img.jpg"/>))}
       </div>
     );
   }
@@ -16,7 +21,7 @@ class SectionRow extends React.Component {
 
 class PageSection extends React.Component {
   render() {
-    let arr = Array(Number(this.props.rowCount)).fill(0);
+    let arr = Array(10).fill(0);
     return(
       <div id="fullpage">
         {arr.map((e,i)=>(<SectionRow key={i}/>))}
