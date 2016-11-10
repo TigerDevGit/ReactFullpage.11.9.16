@@ -44,26 +44,19 @@ $('#panel div.col-xs-2').on('click',function(){
 });
 
 $('#panel').on('click',function(){
-  $(this).toggleClass('paneltoggle',1000);
   if(toggle == 0){
     $(this).animate({
       height: '90%',
       width: '82%'
     }, 500);
-    // $('div.col-xs-2 img').animate({height:'10%'},500);
-
     toggle = 1;
-    // $('div.col-xs-2 img').animate({'height':'100%'},500);
   }
   else if(toggle == 1){
     $(this).animate({
       height: '268px',
       width: '212px'
     }, 500);
-    // $('div.col-xs-2 img').animate({height:'2%'},500);
-
     toggle = 0;
-    // $('div.col-xs-2 img').animate({'height':'2%'},500);
   }
 });
 
