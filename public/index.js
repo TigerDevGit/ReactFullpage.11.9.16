@@ -57,8 +57,8 @@ $('#panel').on('click',function(){
   }
   else if(toggle == 1){
     $(this).animate({
-      height: '232px',
-      width: '182px'
+      height: '268px',
+      width: '212px'
     }, 500);
     // $('div.col-xs-2 img').animate({height:'2%'},500);
 

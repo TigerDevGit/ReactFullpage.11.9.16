@@ -23,23 +23,9 @@ Fixed button outside the fullpage.js wrapper
   height: 100%;
 }
 
-#panel img {
-  width: 100%;
-  height: 48px;
-}
-
-#panel td {
-  padding: 2px;
-}
-
-#panel .row {
-  height: 9%;
-  margin-top: 9px;
-}
-
 #panel {
-  width: 182px;
-  height: 232px;
+  width: 212px;
+  height: 268px;
   background: rgba(0,0,0,0.8);
   position: fixed;;
   bottom: 45px;
@@ -47,21 +33,32 @@ Fixed button outside the fullpage.js wrapper
   border-radius: 6px;
   box-shadow: 0px -3px 15px 3px rgba(255, 255, 255, 0.5);
   z-index: 1;
+  padding: 20px 0;
+}
+
+#panel .row {
+  height: 10%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px 20px;
+}
+
+#panel img {
+  width: 100%;
+  height: 100%;
+  vertical-align: baseline;
 }
 
 .paneltoggle {
   width: 85%;
   height: 90%;
 }
-/*
-#panel td {
-  width: 17px;
-  height: 10px;
-  margin: 0px 8px;
-  background: #5D5D5D;
-  display: inline-block;;
-  z-index: 2;
-}*/
+
+#panel .col-xs-2 {
+  width: 20%;
+  padding: 2px;
+  height: 100%;
+}
 
 #panel .active {
   background-color: #8fc2ff;

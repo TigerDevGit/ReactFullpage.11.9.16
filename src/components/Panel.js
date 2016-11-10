@@ -9,7 +9,6 @@ class Row extends React.Component {
         <div className='col-xs-2'><img src="img.jpg" alt="Smiley face" /></div>
         <div className='col-xs-2'><img src="img.jpg" alt="Smiley face" /></div>
         <div className='col-xs-2'><img src="img.jpg" alt="Smiley face" /></div>
-        <div className='col-xs-2'><img src="img.jpg" alt="Smiley face" /></div>
       </div>
     );
   }
