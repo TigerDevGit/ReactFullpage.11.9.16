@@ -109,7 +109,7 @@
 
 
 	// module
-	exports.push([module.id, ".section {\r\n  text-align:center;\r\n  font-size: 3em;\r\n}\r\n\r\n.fp-controlArrow {\r\n  /*display: none;*/\r\n}\r\n\r\n/**\r\nFixed button outside the fullpage.js wrapper\r\n*/\r\n#moveUp{\r\n  top: 20px;\r\n  left: 20px;\r\n  position:fixed;\r\n  z-index:999;\r\n  font-size: 3em;\r\n}\r\n\r\n#fullpage img {\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n#panel {\r\n  width: 212px;\r\n  height: 268px;\r\n  background: rgba(0,0,0,0.8);\r\n  position: fixed;;\r\n  bottom: 45px;\r\n  right: 55px;\r\n  border-radius: 5%;\r\n  box-shadow: 0px -3px 15px 3px rgba(255, 255, 255, 0.5);\r\n  z-index: 1;\r\n  padding: 20px 0;\r\n}\r\n\r\n#panel .row {\r\n  height: 10%;\r\n  width: 100%;\r\n  margin: 0px;\r\n  padding: 0px 20px;\r\n}\r\n\r\n#panel img {\r\n  width: 90%;\r\n  height: 90%;\r\n  display: block;\r\n  margin: auto;\r\n  border-radius: 10%;\r\n}\r\n\r\n.paneltoggle {\r\n  width: 85%;\r\n  height: 90%;\r\n}\r\n\r\n#panel .col-xs-2 {\r\n  width: 20%;\r\n  padding: 2px;\r\n  height: 100%;\r\n}\r\n\r\n#panel .active {\r\n  background-color: #8fc2ff;\r\n  box-shadow: 0 0 8px 2px #8fc2ff;\r\n}\r\n\r\n\r\n#status {\r\n  width: 100%;\r\n  position: fixed;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: 1;\r\n}\r\n\r\n#status #buttonImg {\r\n  width: 100px;\r\n  height: 100px;\r\n}\r\n#status #statusContents {\r\n  -webkit-box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  -moz-box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  /*height: 458px;*/\r\n  background: rgba(0, 0, 0, 0.75);;\r\n}\r\n#status #lineImg {\r\n  width: 100%;\r\n  height: 175px;\r\n}\r\n#status #contentsTable {\r\n  width: 100%;\r\n  height: 300px;\r\n}\r\n#status #contentsTable #contentsImg {\r\n  width: 65%;\r\n  height: 240px;\r\n  margin: 30px;\r\n}\r\n\r\n#status .col-xs-4 {\r\n  margin-top: 20px;\r\n}\r\n\r\nhr, h1 {\r\n  margin: 0;\r\n}\r\n", ""]);
+	exports.push([module.id, ".section {\r\n  text-align:center;\r\n  font-size: 3em;\r\n}\r\n\r\n.fp-controlArrow {\r\n  /*display: none;*/\r\n}\r\n\r\n/**\r\nFixed button outside the fullpage.js wrapper\r\n*/\r\n#moveUp{\r\n  top: 20px;\r\n  left: 20px;\r\n  position:fixed;\r\n  z-index:999;\r\n  font-size: 3em;\r\n}\r\n\r\n#fullpage img {\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n#panel {\r\n  width: 212px;\r\n  height: 268px;\r\n  background: rgba(0,0,0,0.8);\r\n  position: fixed;;\r\n  bottom: 45px;\r\n  right: 55px;\r\n  border-radius: 5%;\r\n  box-shadow: 0px -3px 15px 3px rgba(255, 255, 255, 0.5);\r\n  z-index: 1;\r\n  padding: 20px 0;\r\n}\r\n\r\n#panel .row {\r\n  height: 10%;\r\n  width: 100%;\r\n  margin: 0px;\r\n  padding: 0px 20px;\r\n}\r\n\r\n#panel img {\r\n  width: 90%;\r\n  height: 90%;\r\n  display: block;\r\n  margin: auto;\r\n  border-radius: 10%;\r\n}\r\n\r\n.paneltoggle {\r\n  width: 85%;\r\n  height: 90%;\r\n}\r\n\r\n#panel .col-xs-2 {\r\n  width: 20%;\r\n  padding: 2px;\r\n  height: 100%;\r\n}\r\n\r\n#panel .active {\r\n  background-color: #8fc2ff;\r\n  box-shadow: 0 0 8px 2px #8fc2ff;\r\n}\r\n\r\n\r\n#status {\r\n  width: 100%;\r\n  position: fixed;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: 1;\r\n}\r\n\r\n#status #buttonImg {\r\n  width: 100px;\r\n  height: 100px;\r\n}\r\n#status #statusContents {\r\n  -webkit-box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  -moz-box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  /*height: 458px;*/\r\n  background: rgba(0, 0, 0, 0.75);;\r\n}\r\n#status #lineImg {\r\n  width: 100%;\r\n  height: 175px;\r\n}\r\n#status #contentsTable {\r\n  width: 100%;\r\n  height: 300px;\r\n}\r\n#status #contentsTable #contentsImg {\r\n  width: 65%;\r\n  height: 240px;\r\n  margin: 30px;\r\n}\r\n\r\n#status .col-xs-4 {\r\n  margin-top: 20px;\r\n}\r\n\r\nhr, h1 {\r\n  margin: 0;\r\n}\r\n\r\n.glyphicon-triangle-top {\r\n  color: green;\r\n}\r\n\r\n.glyphicon-triangle-bottom {\r\n  color: red;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -23816,7 +23816,7 @@
 	          this.props.value
 	        ),
 	        _react2.default.createElement('hr', null),
-	        this.state.isTop ? top : bottom,
+	        this.props.isTop ? top : bottom,
 	        _react2.default.createElement(
 	          'span',
 	          null,
@@ -23859,11 +23859,11 @@
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'row col-xs-7' },
-	                _react2.default.createElement(StatusElement, { title: 'Temp', value: '89.8\'', comment: 'since yesterday' }),
+	                _react2.default.createElement(StatusElement, { title: 'Temp', value: '89.8\'', comment: 'since yesterday', isTop: 'true' }),
 	                _react2.default.createElement(StatusElement, { title: 'Humidity', value: '80%', comment: 'since yesterday' }),
-	                _react2.default.createElement(StatusElement, { title: 'VPD', value: '9.4', comment: 'no change' }),
+	                _react2.default.createElement(StatusElement, { title: 'VPD', value: '9.4', comment: 'no change', isTop: 'true' }),
 	                _react2.default.createElement(StatusElement, { title: 'Lux', value: '7.8', comment: 'since yesterday' }),
-	                _react2.default.createElement(StatusElement, { title: 'Start', value: '4/25', comment: 'germination' }),
+	                _react2.default.createElement(StatusElement, { title: 'Start', value: '4/25', comment: 'germination', isTop: 'true' }),
 	                _react2.default.createElement(StatusElement, { title: 'Harvest', value: '7/27', comment: 'since yesterday' })
 	              )
 	            )
