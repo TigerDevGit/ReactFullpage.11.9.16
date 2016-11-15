@@ -122,7 +122,6 @@ class App extends React.Component {
         y: yy
       });
     } 
-    console.log($('#panel').css('height'));
   }
   x_changeX(val) {
     this.setState((prev)=>{
@@ -155,7 +154,6 @@ class App extends React.Component {
     this.setState((prev)=>({panel:!prev.panel}));
   }
   render() {
-    console.log(this.state.panel);
     let full_style = {
       width: '100%',
       height: '100%'
