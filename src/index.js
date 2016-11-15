@@ -6,8 +6,8 @@ import App from './components/App';
 
 let imgs = new Array(50);
 imgs.fill('img.jpg');
-imgs[1] = 'a.png';
-imgs[2] = 'b.png';
+imgs[1] = 'a.jpg';
+imgs[2] = 'b.jpg';
 
 ReactDOM.render(
   <div>
