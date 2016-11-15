@@ -66,6 +66,8 @@
 
 	var imgs = new Array(50);
 	imgs.fill('img.jpg');
+	imgs[1] = '1.png';
+	imgs[2] = '2.png';
 	console.log(imgs);
 
 	_reactDom2.default.render(_react2.default.createElement(
@@ -109,7 +111,7 @@
 
 
 	// module
-	exports.push([module.id, ".section {\r\n  text-align:center;\r\n  font-size: 3em;\r\n}\r\n\r\n.fp-controlArrow {\r\n  /*display: none;*/\r\n}\r\n\r\n/**\r\nFixed button outside the fullpage.js wrapper\r\n*/\r\n#moveUp{\r\n  top: 20px;\r\n  left: 20px;\r\n  position:fixed;\r\n  z-index:999;\r\n  font-size: 3em;\r\n}\r\n\r\n#fullpage img {\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n#panel {\r\n  width: 212px;\r\n  height: 268px;\r\n  background: rgba(0,0,0,0.8);\r\n  position: fixed;;\r\n  bottom: 45px;\r\n  right: 55px;\r\n  border-radius: 5%;\r\n  box-shadow: 0px -3px 15px 3px rgba(255, 255, 255, 0.5);\r\n  z-index: 1;\r\n  padding: 20px 0;\r\n}\r\n\r\n#panel .row {\r\n  height: 10%;\r\n  width: 100%;\r\n  margin: 0px;\r\n  padding: 0px 20px;\r\n}\r\n\r\n#panel img {\r\n  width: 90%;\r\n  height: 90%;\r\n  display: block;\r\n  margin: auto;\r\n  border-radius: 10%;\r\n}\r\n\r\n.paneltoggle {\r\n  width: 85%;\r\n  height: 90%;\r\n}\r\n\r\n#panel .col-xs-2 {\r\n  width: 20%;\r\n  padding: 2px;\r\n  height: 100%;\r\n}\r\n\r\n#panel .active {\r\n  background-color: #8fc2ff;\r\n  box-shadow: 0 0 8px 2px #8fc2ff;\r\n}\r\n\r\n\r\n#status {\r\n  width: 100%;\r\n  position: fixed;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: 1;\r\n}\r\n\r\n#status #buttonImg {\r\n  width: 100px;\r\n  height: 100px;\r\n}\r\n#status #statusContents {\r\n  -webkit-box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  -moz-box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  /*height: 458px;*/\r\n  background: rgba(0, 0, 0, 0.75);;\r\n}\r\n#status #lineImg {\r\n  width: 100%;\r\n  height: 175px;\r\n}\r\n#status #contentsTable {\r\n  width: 100%;\r\n  height: 300px;\r\n}\r\n#status #contentsTable #contentsImg {\r\n  width: 65%;\r\n  height: 240px;\r\n  margin: 30px;\r\n}\r\n\r\n#status .col-xs-4 {\r\n  margin-top: 20px;\r\n}\r\n\r\nhr, h1 {\r\n  margin: 0;\r\n}\r\n\r\n.glyphicon-triangle-top {\r\n  color: green;\r\n}\r\n\r\n.glyphicon-triangle-bottom {\r\n  color: red;\r\n}\r\n", ""]);
+	exports.push([module.id, "html, body, div#root, div#root>div {\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n.section {\r\n  text-align:center;\r\n  font-size: 3em;\r\n}\r\n\r\n.fp-controlArrow {\r\n  /*display: none;*/\r\n}\r\n\r\n/**\r\nFixed button outside the fullpage.js wrapper\r\n*/\r\n#moveUp{\r\n  top: 20px;\r\n  left: 20px;\r\n  position:fixed;\r\n  z-index:999;\r\n  font-size: 3em;\r\n}\r\n\r\n#panel {\r\n  width: 212px;\r\n  height: 268px;\r\n  background: rgba(0,0,0,0.8);\r\n  position: fixed;;\r\n  bottom: 45px;\r\n  right: 55px;\r\n  border-radius: 5%;\r\n  box-shadow: 0px -3px 15px 3px rgba(255, 255, 255, 0.5);\r\n  z-index: 1;\r\n  padding: 20px 0;\r\n}\r\n\r\n#panel .row {\r\n  height: 10%;\r\n  width: 100%;\r\n  margin: 0px;\r\n  padding: 0px 20px;\r\n}\r\n\r\n#panel img {\r\n  width: 90%;\r\n  height: 90%;\r\n  display: block;\r\n  margin: auto;\r\n  border-radius: 10%;\r\n}\r\n\r\n.paneltoggle {\r\n  width: 85%;\r\n  height: 90%;\r\n}\r\n\r\n#panel .col-xs-2 {\r\n  width: 20%;\r\n  padding: 2px;\r\n  height: 100%;\r\n}\r\n\r\n#panel .active {\r\n  background-color: #8fc2ff;\r\n  box-shadow: 0 0 8px 2px #8fc2ff;\r\n}\r\n\r\n\r\n#status {\r\n  width: 100%;\r\n  position: fixed;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: 1;\r\n}\r\n\r\n#status #buttonImg {\r\n  width: 100px;\r\n  height: 100px;\r\n}\r\n#status #statusContents {\r\n  -webkit-box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  -moz-box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  box-shadow: 0px -60px 121px 0px rgba(0,0,0,0.75);\r\n  /*height: 458px;*/\r\n  background: rgba(0, 0, 0, 0.75);;\r\n}\r\n#status #lineImg {\r\n  width: 100%;\r\n  height: 175px;\r\n}\r\n#status #contentsTable {\r\n  width: 100%;\r\n  height: 300px;\r\n}\r\n#status #contentsTable #contentsImg {\r\n  width: 65%;\r\n  height: 240px;\r\n  margin: 30px;\r\n}\r\n\r\n#status .col-xs-4 {\r\n  margin-top: 20px;\r\n}\r\n\r\nhr, h1 {\r\n  margin: 0;\r\n}\r\n\r\n.glyphicon-triangle-top {\r\n  color: green;\r\n}\r\n\r\n.glyphicon-triangle-bottom {\r\n  color: red;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -23527,23 +23529,213 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var App = function (_React$Component) {
-	  _inherits(App, _React$Component);
+	var ImgShow = function (_React$Component) {
+	  _inherits(ImgShow, _React$Component);
+
+	  function ImgShow() {
+	    _classCallCheck(this, ImgShow);
+
+	    var _this = _possibleConstructorReturn(this, (ImgShow.__proto__ || Object.getPrototypeOf(ImgShow)).call(this));
+
+	    _this.state = {
+	      next: ''
+	    };
+	    return _this;
+	  }
+
+	  _createClass(ImgShow, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var obj = this;
+	      $("#img_show img").swipe({
+	        swipe: function swipe(event, direction, distance, duration, fingerCount, fingerData) {
+	          var index = obj.props.x * 5 + obj.props.y;
+	          switch (direction) {
+	            case 'up':
+	              $(this).hide("slide", {
+	                direction: "up"
+	              }, 1000, function () {
+	                $(this).css('display', 'block');
+	                obj.props.changeX(1);
+	              });
+	              $('#img_show img').not(this).show("slide", {
+	                direction: "down"
+	              }, 1000, function () {
+	                $(this).css('display', 'none');
+	              });
+	              obj.setState({ next: obj.props.imgArr[index + 5 > 49 ? index + 5 - 50 : index + 5] });
+	              break;
+	            case 'down':
+	              $(this).hide("slide", {
+	                direction: "down"
+	              }, 1000, function () {
+	                $(this).css('display', 'block');
+	                obj.props.changeX(-1);
+	              });
+	              $('#img_show img').not(this).show("slide", {
+	                direction: "up"
+	              }, 1000, function () {
+	                $(this).css('display', 'none');
+	              });
+	              obj.setState({ next: obj.props.imgArr[index - 5 < 0 ? index - 5 + 50 : index - 5] });
+	              break;
+	            case 'right':
+	              $(this).hide("slide", {
+	                direction: "right"
+	              }, 1000, function () {
+	                $(this).css('display', 'block');
+	                obj.props.changeY(-1);
+	              });
+	              $('#img_show img').not(this).show("slide", {
+	                direction: "left"
+	              }, 1000, function () {
+	                $(this).css('display', 'none');
+	              });
+	              obj.setState({ next: obj.props.imgArr[index % 5 == 0 ? index + 4 : index - 1] });
+	              break;
+	            case 'left':
+	              $(this).hide("slide", {
+	                direction: "left"
+	              }, 1000, function () {
+	                $(this).css('display', 'block');
+	                obj.props.changeY(1);
+	              });
+	              $('#img_show img').not(this).show("slide", {
+	                direction: "right"
+	              }, 1000, function () {
+	                $(this).css('display', 'none');
+	              });
+	              obj.setState({ next: obj.props.imgArr[index % 5 == 4 ? index - 4 : index + 1] });
+	              break;
+	            default:
+	              break;
+	          }
+	        }
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var div_style = {
+	        width: '100%',
+	        height: '100%',
+	        position: 'fixed',
+	        top: '0',
+	        left: '0'
+	      };
+	      var dis_none = {
+	        width: '100%',
+	        height: '100%',
+	        position: 'fixed',
+	        top: '0',
+	        left: '0',
+	        display: 'none'
+	      };
+	      var index = this.props.x * 5 + this.props.y;
+	      return _react2.default.createElement(
+	        'div',
+	        { id: 'img_show', style: div_style, onClick: this.props.test },
+	        _react2.default.createElement('img', { src: this.props.imgArr[index], style: div_style, alt: 'Smiley face' }),
+	        _react2.default.createElement('img', { src: this.state.next, style: dis_none, alt: 'Smiley face' })
+	      );
+	    }
+	  }]);
+
+	  return ImgShow;
+	}(_react2.default.Component);
+
+	var App = function (_React$Component2) {
+	  _inherits(App, _React$Component2);
 
 	  function App() {
 	    _classCallCheck(this, App);
 
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	    var _this2 = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+
+	    _this2.state = {
+	      x: 0,
+	      y: 0,
+	      panel: false
+	    };
+	    return _this2;
 	  }
 
 	  _createClass(App, [{
+	    key: 'changeXY',
+	    value: function changeXY(xx, yy) {
+	      if ($('#panel').css('height') != '268px') {
+	        this.setState({
+	          x: xx,
+	          y: yy
+	        });
+	      }
+	      console.log($('#panel').css('height'));
+	    }
+	  }, {
+	    key: 'x_changeX',
+	    value: function x_changeX(val) {
+	      this.setState(function (prev) {
+	        if (prev.x == 0 && val == -1) {
+	          return { x: 9 };
+	        }
+	        if (prev.x == 9 && val == 1) {
+	          return { x: 0 };
+	        }
+	        return { x: prev.x + val };
+	      });
+	    }
+	  }, {
+	    key: 'y_changeY',
+	    value: function y_changeY(val) {
+	      this.setState(function (prev) {
+	        if (prev.y == 0 && val == -1) {
+	          return { y: 4 };
+	        }
+	        if (prev.y == 4 && val == 1) {
+	          return { y: 0 };
+	        }
+	        return { y: prev.y + val };
+	      });
+	    }
+	  }, {
+	    key: 'panelToggle',
+	    value: function panelToggle() {
+	      // if(this.state.panel == false){
+	      //   alert();
+	      //   $('#panel').animate({
+	      //     height: '90%',
+	      //     width: '82%'
+	      //   }, 500);
+	      // }
+	      // else if(this.state.panel == true){
+	      //   $('#panel').animate({
+	      //     height: '268px',
+	      //     width: '212px'
+	      //   }, 500);
+	      // }
+	      this.setState(function (prev) {
+	        return { panel: !prev.panel };
+	      });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      console.log(this.state.panel);
+	      var full_style = {
+	        width: '100%',
+	        height: '100%'
+	      };
 	      return _react2.default.createElement(
 	        'div',
-	        null,
-	        _react2.default.createElement(_PageSection2.default, { imgArr: this.props.imgs }),
-	        _react2.default.createElement(_Panel2.default, { imgArr: this.props.imgs }),
+	        { style: full_style },
+	        _react2.default.createElement(ImgShow, { imgArr: this.props.imgs, x: this.state.x, y: this.state.y, changeX: this.x_changeX.bind(this), changeY: this.y_changeY.bind(this) }),
+	        _react2.default.createElement(_Panel2.default, {
+	          imgArr: this.props.imgs,
+	          x: this.state.x,
+	          y: this.state.y,
+	          panelToggle: this.panelToggle.bind(this),
+	          onClickElement: this.changeXY.bind(this)
+	        }),
 	        _react2.default.createElement(_StatusContents2.default, null)
 	      );
 	    }
@@ -23693,10 +23885,25 @@
 	  _createClass(Element, [{
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+
+	      var i = this.props.imgArr[this.props.rowNum * 5 + this.props.colNum];
+	      // debugger
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'col-xs-2' },
-	        _react2.default.createElement('img', { src: this.props.imgName, alt: 'Smiley face' })
+	        { className: 'col-xs-2', onClick: function onClick() {
+	            return _this2.props.onClickElement(_this2.props.rowNum, _this2.props.colNum);
+	          } },
+	        this.props.rowNum === this.props.selectedRowNum && this.props.colNum === this.props.selectedColNum ? _react2.default.createElement('img', {
+	          style: { 'border': '2px #8fc2ff solid' },
+	          className: this.props.key,
+	          src: i,
+	          alt: 'Smiley face'
+	        }) : _react2.default.createElement('img', {
+	          className: this.props.key,
+	          src: i,
+	          alt: 'Smiley face'
+	        })
 	      );
 	    }
 	  }]);
@@ -23716,12 +23923,23 @@
 	  _createClass(Row, [{
 	    key: 'render',
 	    value: function render() {
+	      var _this4 = this;
+
 	      var arr = Array(5).fill(0);
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'row' },
 	        arr.map(function (e, i) {
-	          return _react2.default.createElement(Element, { key: i, imgName: 'img.jpg' });
+	          return _react2.default.createElement(Element, {
+	            key: i,
+	            imgName: 'img.jpg',
+	            rowNum: _this4.props.rowNum,
+	            colNum: i,
+	            imgArr: _this4.props.imgArr,
+	            selectedRowNum: _this4.props.selectedRowNum,
+	            selectedColNum: _this4.props.selectedColNum,
+	            onClickElement: _this4.props.onClickElement
+	          });
 	        })
 	      );
 	    }
@@ -23742,13 +23960,20 @@
 	  _createClass(Panel, [{
 	    key: 'render',
 	    value: function render() {
-	      var arr = Array(this.props.imgArr.length / 5).fill(0);
+	      var _this6 = this;
 
+	      var arr = Array(this.props.imgArr.length / 5).fill(0);
 	      return _react2.default.createElement(
 	        'div',
-	        { id: 'panel', className: 'container' },
+	        { id: 'panel', className: 'container', onClick: this.props.panelToggle },
 	        arr.map(function (e, i) {
-	          return _react2.default.createElement(Row, { key: i });
+	          return _react2.default.createElement(Row, { key: i,
+	            rowNum: i,
+	            imgArr: _this6.props.imgArr,
+	            selectedRowNum: _this6.props.x,
+	            selectedColNum: _this6.props.y,
+	            onClickElement: _this6.props.onClickElement
+	          });
 	        })
 	      );
 	    }
