@@ -64,8 +64,8 @@
 
 	var imgs = new Array(50);
 	imgs.fill('img.jpg');
-	imgs[1] = 'a.png';
-	imgs[2] = 'b.png';
+	imgs[1] = 'http://www.w3schools.com/html/pic_mountain.jpg';
+	imgs[2] = 'http://www.w3schools.com/html/pic_graph.png';
 
 	_reactDom2.default.render(_react2.default.createElement(
 	  'div',
